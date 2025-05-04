@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script>
+        const menuBtn = document.querySelector('.menu');
+        const overlay = document.querySelector('.overlay');
+        const closeBtn = document.querySelector('.close');
+      
+        menuBtn.addEventListener('click', () => {
+          overlay.style.display = 'block';
+        });
+      
+        closeBtn.addEventListener('click', () => {
+          overlay.style.display = 'none';
+        });
+        window.addEventListener("scroll", function () {
+            const header = document.querySelector(".header");
+            if (window.scrollY > 100) {
+                header.style.backgroundColor = "rgba(0, 0, 0, 0.85)";
+            } else {
+                header.style.backgroundColor = "transparent";
+            }
+        });
+
+      </script>      
+    <title>Buku Tahunan & Dokumentasi | Denji Yearframe</title>
+    <link rel="icon" type="image/x-icon" href="Denji-removebg-preview.png">
+</head>
+<body>
+    <header>
+      <h3><span class="brand-bold">Denji</span> <span class="brand-light">Yearframe</span></h3>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#fitur">Fitur</a>
+        <a href="#harga">Harga</a>
+      </nav>
+      <a href="#kontak" class="header-button">Contact</a>
+    </header>
+  
+    <div class="hero" id="home">
+        <div class="hero_image">
+            <img src="hero-section-fix_.webp" alt="Fotografer memegang kamera">
+        </div>
+        <div class="hero_content">
+          <h1>
+            <span class="highlight">Abadikan</span> Setiap <span class="highlight">Momen</span> Berharga
+          </h1>
+            <p>Denji Yearframe hadir untuk membuat buku tahunanmu penuh kisah tak terlupakan — dengan desain eksklusif dan foto terbaik!</p>
+            <a href="#layanan" class="btn_utama">Lihat Layanan</a>
+        </div>
+    </div>
+
+    <div class="identity" id="about">
+        <div class="identity_about">
+            <h1>Siapa Kami?</h1>
+            <p>Denji Yearframe adalah partner terpercaya dalam menciptakan buku tahunan sekolah, event, dan gathering. Dengan pengalaman profesional, kami memastikan setiap kenanganmu tertangkap sempurna — tanpa repot!</p>
+        </div>
+        <div class="gambar_identity">
+            <img src="foto-yearbook-kelompok-tamansari.webp" alt="Contoh hasil buku tahunan siswa">
+        </div>
+    </div>
+
+    <div class="alasan" id="fitur">
+        <h1>Kenapa Memilih Kami?</h1>
+        <p>Kami berikan layanan all-in-one — mulai dari konsep desain, sesi foto kreatif, hingga cetakan berkualitas tinggi. Fokusmu hanya bersenang-senang, sisanya biar kami yang urus!</p>
+        <div class="features">
+            <div class="feature">
+                <img src="analytics-outline.svg" alt="analytics-outline">
+                <h2>Desain Kustom</h2>
+                <p>Buku tahunan Anda dirancang secara unik, sesuai dengan tema dan gaya sekolah Anda, tanpa biaya tambahan!</p>
+            </div>
+            <div class="feature">
+                <img src="flash-outline.svg" alt="flash-outline">
+                <h2>Pengaturan Lokasi</h2>
+                <p>Kami memilih tempat foto yang Instagramable, sehingga Anda bisa tampil keren tanpa repot.</p>
+            </div>
+            <div class="feature">
+                <img src="layers-outline.svg" alt="layers-outline">
+                <h2>Harga Terjangkau</h2>
+                <p>Kami menawarkan harga yang bersahabat, sehingga semua sekolah dapat memiliki buku tahunan yang memukau!</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="fitur">
+        <div class="fitur_konten">
+            <h1>Fitur Kami</h1>
+            <p>Setiap layanan kami dirancang untuk menjadikan proses pembuatan buku tahunan Anda semudah dan seasyik mungkin.</p>
+            <div class="fitur_item">
+                <img src="centang.svg" alt="check">
+                <div>
+                    <h2>Proses Mudah</h2>
+                    <p>Kami membuat semuanya sederhana, sehingga Anda bisa fokus pada hal-hal yang lebih penting, seperti bersenang-senang!</p>
+                </div>
+            </div>
+            <div class="fitur_item">
+                <img src="centang.svg" alt="check">
+                <div>
+                    <h2>Kualitas Cetak Tinggi</h2>
+                    <p>Kami menggunakan bahan berkualitas tinggi untuk memastikan buku tahunan Anda tahan lama dan terlihat luar biasa.</p>
+                </div>
+            </div>
+            <div class="fitur_item">
+                <img src="centang.svg" alt="check">
+                <div>
+                    <h2>Tim Professional</h2>
+                    <p>Tim kami terdiri dari desainer dan fotografer berpengalaman yang siap membantu Anda setiap langkah.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="fitur_image">
+            <img src="foto-yearbook-kelompok1.webp" alt="contoh hasil foto yearbook">
+        </div>
+    </section>
+
+    <section class="layanan" id="layanan">
+        <div class="layanan_image">
+            <img src="foto-yearbook-kelompok2.webp" alt="contoh foto buku tahunan sekolah">
+        </div>
+        <div class="layanan_konten">
+            <h1>Layanan Kami</h1>
+            <p>Pilih paket terbaik dan abadikan perjalanan sekolahmu dengan layanan profesional kami!</p>
+            <div class="layanan_item">
+                <img src="centang.svg" alt="check">
+                <div>
+                    <h2>Paket Foto</h2>
+                    <p>Pilih dari berbagai paket foto yang sesuai dengan anggaran dan kebutuhan Anda.</p>
+                </div>
+            </div>
+            <div class="layanan_item">
+                <img src="centang.svg" alt="check">
+                <div>
+                    <h2>Desain Kreatif</h2>
+                    <p>Kami memiliki berbagai desain menarik yang dapat disesuaikan dengan tema sekolah Anda.</p>
+                </div>
+            </div>
+            <div class="layanan_item">
+                <img src="centang.svg" alt="check">
+                <div>
+                    <h2>Penyuntingan Professional</h2>
+                    <p>Setiap foto dan halaman akan disunting secara profesional untuk hasil yang memukau.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="price-list yearbook" id="harga">
+        <h2 class="price-title">Daftar Harga Yearbook</h2>
+        <div class="price-cards">
+          <div class="price-card-row">
+            <div class="price-card">
+              <h3>📸 Picture Perfect <span>- Paket Hanya Foto</span></h3>
+              <p class="price">Rp 1.000.000 - Rp 3.000.000</p>
+              <ul>
+                <li>✅ Sesi pemotretan kelas, individu, dan kelompok</li>
+                <li>✅ Durasi 3-6 jam (tergantung jumlah siswa)</li>
+                <li>✅ Fotografer profesional + asisten</li>
+                <li>✅ Peralatan standar</li>
+                <li>✅ Semua foto dalam format digital</li>
+                <li>✅ 10 foto pilihan per siswa akan di-retouch</li>
+                <li>✅ Free konsep pose & arahan gaya</li>
+              </ul>
+            </div>
+            <div class="price-card">
+              <h3>📚 Ultimate Memories <span>- Paket Lengkap Yearbook + Fotografi</span></h3>
+              <p class="price">Rp 50.000 - 150.000 / pcs</p>
+              <ul>
+                <li>✅ Cover Hardcover</li>
+                <li>✅ 80-120 halaman full color</li>
+                <li>✅ Kertas Art Paper 150-170 gsm</li>
+                <li>✅ Ukuran A4</li>
+                <li>✅ Layout eksklusif & profesional</li>
+                <li>✅ 3x revisi desain</li>
+                <li>✅ Free 2 halaman kolase kenangan</li>
+                <li>✅ Free custom quotes & ilustrasi</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="price-list family-gathering" id="family-gathering">
+        <h2 class="price-title">Paket Family Gathering</h2>
+        <div class="price-cards">
+          <div class="price-card-row">
+            <div class="price-card">
+              <h3>📷 Momen Abadi <span>- Dokumentasi Foto</span></h3>
+              <p class="price">Rp 1.000.000</p>
+              <ul>
+                <li>✅ Sesi foto seluruh acara</li>
+                <li>✅ Fotografer profesional</li>
+                <li>✅ Semua foto dalam format digital HD</li>
+                <li>✅ 20 foto pilihan di-retouch</li>
+                <li>✅ Album digital eksklusif</li>
+              </ul>
+            </div>
+      
+            <div class="price-card">
+              <h3>🎥 Cerita Abadi <span>- Dokumentasi Video</span></h3>
+              <p class="price">Rp 1.500.000</p>
+              <ul>
+                <li>✅ Perekaman seluruh acara</li>
+                <li>✅ Videografer profesional</li>
+                <li>✅ Video cinematic highlight</li>
+                <li>✅ Video dokumenter full event</li>
+                <li>✅ Editing video profesional</li>
+              </ul>
+            </div>
+          </div>
+      
+          <div class="price-card-row">
+            <div class="price-card full-width">
+              <h3>🚁 Gathering Premium <span>- Foto + Video + Drone</span></h3>
+              <p class="price">Rp 2.500.000</p>
+              <ul>
+                <li>✅ Dokumentasi foto dan video lengkap</li>
+                <li>✅ Tim fotografer & videografer profesional</li>
+                <li>✅ 1 unit drone </li>
+                <li>✅ Video cinematic + dokumenter</li>
+                <li>✅ Semua file digital + album foto</li>
+                <li>✅ 30 foto pilihan di-retouch</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <div class="produkcta">
+        <h1>Siap untuk Membuat Kenangan?</h1>
+        <p>Pesan sekarang dan wujudkan buku tahunan atau dokumentasi acaramu menjadi karya berkesan yang akan selalu dikenang. Klik tombol di bawah ini untuk mulai konsultasi gratis!</p>
+        <a href="wa.me/+6282133019386" id="kontak" class="produkctabutton">Konsultasi Sekarang</a>
+      </div>
+      
+      <footer class="footer">
+        <div class="footer-links">
+          <a href="#about">Tentang Kami</a>
+          <a href="#layanan">Layanan</a>
+          <a href="#harga">Harga</a>
+          <a href="#kontak">Kontak</a>
+        </div>
+      
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/" target="https://www.instagram.com/denji.yearframe/"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/+6282133019386" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      
+        <p>© 2025 Denji Yearframe. All rights reserved.</p>
+      </footer>      
+      
+</body>
+</html>
