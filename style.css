@@ -191,44 +191,55 @@ nav a:hover::after {
 
 /*480px*/
 @media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  .navbar-logo {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .navbar-menu {
+    gap: 15px;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .navbar-menu a {
+    font-size: 15px;
+    padding: 5px 0;
+  }
+
+  .btn_utama {
+    font-size: 14px;
+    padding: 10px 22px;
+    margin-top: 10px;
+  }
+
+  .hero {
+    padding-top: 100px;
+    padding-bottom: 30px;
+    justify-content: flex-start;
+  }
+
+  .hero_content {
+    padding: 0 20px;
+    max-width: 100%;
+    text-align: center;
+  }
+
   .hero_content h1 {
-    font-size: 28px;
+    font-size: 1.8rem;
+    line-height: 1.3;
+    margin-bottom: 15px;
   }
 
   .hero_content p {
     font-size: 14px;
-  }
-
-  .btn_utama {
-    padding: 8px 20px;
-    font-size: 14px;
-  }
-
-  .identity {
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  .identity_about, .gambar_identity {
-    width: 100%;
-  }
-
-  .fitur, .layanan {
-    flex-direction: column;
-    padding: 30px 20px;
-  }
-
-  .fitur_konten, .fitur_image,
-  .layanan_konten, .layanan_image {
-    width: 100%;
-  }
-
-  .produkcta h1 {
-    font-size: 28px;
-  }
-
-  .produkcta p {
-    font-size: 16px;
+    margin-bottom: 20px;
   }
 }
 
