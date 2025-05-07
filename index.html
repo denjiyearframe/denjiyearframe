@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script>
         const menuBtn = document.querySelector('.menu');
@@ -36,13 +37,31 @@
 </head>
 <body>
     <header>
-      <h3><span class="brand-bold">Denji</span> <span class="brand-light">Yearframe</span></h3>
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#fitur">Fitur</a>
-        <a href="#harga">Harga</a>
-      </nav>
-      <a href="#kontak" class="header-button">Contact</a>
+      <header>
+        <h3><span class="brand-bold">Denji</span> <span class="brand-light">Yearframe</span></h3>
+        
+        <nav class="desktop-nav">
+          <a href="#home">Home</a>
+          <a href="#fitur">Fitur</a>
+          <a href="#harga">Harga</a>
+        </nav>
+      
+        <button class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+      
+        <a href="#kontak" class="header-button">Contact</a>
+      
+        <!-- Overlay menu -->
+        <div class="mobile-menu" id="mobileMenu">
+          <button class="close-menu" id="closeMenu">&times;</button>
+          <a href="#home">Home</a>
+          <a href="#fitur">Fitur</a>
+          <a href="#harga">Harga</a>
+          <a href="#kontak">Kontak</a>
+        </div>
+      </header>
+      
     </header>
   
     <div class="hero" id="home">
@@ -150,6 +169,13 @@
                     <p>Setiap foto dan halaman akan disunting secara profesional untuk hasil yang memukau.</p>
                 </div>
             </div>
+            <div class="layanan_item">
+                <img src="centang.svg" alt="check">
+                <div>
+                    <h2>Pemilihan Tempat</h2>
+                    <p>Kami dapat memberikan saran tempat dan juga mempersiapkan tempat pengambilan foto sehingga anda tinggal berpose</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -255,6 +281,26 @@
       
         <p>© 2025 Denji Yearframe. All rights reserved.</p>
       </footer>      
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const closeMenu = document.getElementById('closeMenu');
+  
+    hamburger.addEventListener('click', () => {
+      mobileMenu.style.display = 'flex';
+    });
+  
+    closeMenu.addEventListener('click', () => {
+      mobileMenu.style.display = 'none';
+    });
+  
+    // Optional: klik di luar menu menutup
+    window.addEventListener('click', (e) => {
+      if (!mobileMenu.contains(e.target) && !hamburger.contains(e.target)) {
+        mobileMenu.style.display = 'none';
+      }
+    });
+  </script>
       
 </body>
 </html>
