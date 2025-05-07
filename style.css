@@ -675,6 +675,7 @@ nav a:hover::after {
   color: #e74c3c;
   font-weight: bold;
   margin-bottom: 5px;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .layanan_item p {
@@ -695,6 +696,7 @@ nav a:hover::after {
   margin-bottom: 40px;
   color: #ff5c33;
   font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .price-cards {
@@ -786,6 +788,7 @@ nav a:hover::after {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
 }
 
 .produkcta p {
@@ -793,6 +796,7 @@ nav a:hover::after {
   max-width: 600px;
   margin-bottom: 30px;
   line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
 }
 
 .produkcta .produkctabutton {
