@@ -152,6 +152,10 @@ nav a:hover::after {
   .hamburger {
     display: block;
   }
+
+  .header-button{
+    display: none;
+  }
 }
 
 /* HERO SECTION FIX */
